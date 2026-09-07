@@ -19,5 +19,5 @@ Therefore, this study aims to investigate whether predictive modelling can be us
 |'models/' | contains trained machine learning models |
 |'experimental setup/' | contains configuration and setup files |
 |'experimental results/' | contains results from experiments |
-|'statistical helper and comparison scripts/' | contains statistical helper scripts and scripts used to compare models and results|
-|'visualisation scripts/' | contains scripts used to create visualisation |
+|'scripts/statistical/' | contains statistical helper scripts and scripts used to compare models and results|
+|'scripts/visualisation/' | contains scripts used to create visualisation |
