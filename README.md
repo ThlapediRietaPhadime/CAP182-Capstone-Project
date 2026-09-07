@@ -7,6 +7,11 @@ Addressing this issue is important because STADIOEquities is not primarily faced
 Data Science methods may assist by identifying patterns in the factors associated with first deposit activation. STADIOEquities has access to app and web behaviour, onboarding and KYC data, account and funding information, demographic information, trading activity, and acquisition and marketing data. These data provide an opportunity to investigate whether early client characteristics and behaviours can be used to distinguish clients who are more likely to activate from those who are likely to remain inactive.
 Therefore, this study seeks to generate evidence that may support more targeted onboarding and activation decisions. By improving the understanding of first deposit activation, the findings may assist STADIOEquities in directing activation efforts more effectively and addressing the gap between registered accounts and active clients.
 
+## Problem Statement 
+Despite STADIOEquities having approximately 2.3 million registered accounts and extensive client, onboarding and behavioural data, approximately 41% of registered accounts have never made a deposit, and the sign up to first deposit conversion rate has declined from 64% to 59%. It remains unclear whether client characteristics and early behaviours can reliably distinguish newly registered clients who are likely to make a first deposit from those who are likely to remain inactive.
+Therefore, this study aims to investigate whether predictive modelling can be used to classify newly registered STADIOEquities clients according to their likelihood of first deposit activation, using available client, onboarding, acquisition and behavioural data, to provide evidence that may support more targeted onboarding and activation decisions.
+
+
 ## Repository structure 
 datasets: /datasets contains all datasets used in the project
 models: /models contains trained machine learning models
