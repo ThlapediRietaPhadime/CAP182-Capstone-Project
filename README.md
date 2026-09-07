@@ -1,4 +1,4 @@
-nou# CAP182-Capstone-Project
+# CAP182-Capstone-Project
 
 ## Motivation 
 Digital platforms are increasingly being used in the financial services industry to provide clients with accessible investment opportunities. STADIOEquities is a digital investment platform with approximately 2.3 million registered accounts. However, a significant proportion of these accounts have not been funded or converted into active clients. This presents an important business challenge because the value of acquiring an account is largely realised when a client funds the account and continues to use the platform.
