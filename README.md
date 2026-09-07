@@ -14,10 +14,10 @@ Therefore, this study aims to investigate whether predictive modelling can be us
 
 ## Repository structure 
 | folder | Description |
-|--------|-------------|
-|'datasets/': contains all datasets used in the project|
-|'models/': contains trained machine learning models |
-|'experimental setup/': contains configuration and setup files |
-|'experimental results/':contains results from experiments |
-|'statistical helper and comparison scripts/': contains statistical helper scripts and scripts used to compare models and results|
-|'visualisation scripts/': contains scripts used to create visualisation |
+|:-------- |:-------------|
+|'datasets/' contains all datasets used in the project|
+|'models/' contains trained machine learning models |
+|'experimental setup/' contains configuration and setup files |
+|'experimental results/'contains results from experiments |
+|'statistical helper and comparison scripts/' contains statistical helper scripts and scripts used to compare models and results|
+|'visualisation scripts/' contains scripts used to create visualisation |
