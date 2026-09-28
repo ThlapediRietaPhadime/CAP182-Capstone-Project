@@ -37,3 +37,37 @@ This study will therefore investigate whether predictive modelling can be used t
 | **Issues** |1.Missing or inconsistent records may be identified during data cleaning, particularly when linking client information across the different data sources 2.Some requested variables may contain information recorded after a clients first deposit|
 | **Decisions** |1. Use First Deposit Status as the target variable for the predictive modelling project. 2. Select the final predictive model based on agreed evaluation metrics and its ability to identify clients likely to activate, rather than relying only on overall accuracy. 3. Exclude variables that contain information only available after the prediction point to reduce data leakage.|
 | **Dependencies** |1. Data acquisition and validation must be completed before reliable exploratory analysis can begin. 2. The target definition and observation period must be agreed before the modelling dataset can be finalised. 3. Data cleaning and feature preparation must be completed before model training. 4. Model evaluation must be completed before selecting the final model and making recommendations for targeted onboarding interventions.|
+
+# Term Deposit Activation Prediction
+
+Predicting whether a client will subscribe to a term deposit, using the UCI Bank Marketing dataset as a proxy for STADIOEquities' first-deposit activation problem. Two models are compared: a Logistic Regression baseline and a Random Forest challenger.
+
+## Dataset
+
+UCI Bank Marketing dataset (`bank-additional-full.csv`), 41,188 client contacts from a Portuguese bank's telemarketing campaigns. The `duration` column is dropped to avoid outcome leakage, and the data is split chronologically (80% train / 20% test) rather than randomly, to mirror scoring genuinely new clients.
+
+## How to run this project
+
+1. Clone the repository and install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Place `bank-additional-full.csv` in `datasets/`.
+3. Open the notebooks in `scripts/` in Jupyter and run them in this order, from top to bottom:
+   1. `preprocessing.ipynb`
+   2. `feature_engineering.ipynb`
+   3. `model1_logistic_regression.ipynb`
+   4. `model2_random_forest.ipynb`
+   5. `compare_models.ipynb`
+
+## Summary of results
+
+| Metric | Logistic Regression | Random Forest |
+|---|---|---|
+| Accuracy | 0.532 | 0.574 |
+| ROC-AUC | 0.527 | 0.713 |
+| Precision (deposit) | 0.335 | 0.414 |
+| Recall (deposit) | 0.473 | 0.805 |
+| F1 (deposit) | 0.392 | 0.547 |
+
+Random Forest outperforms Logistic Regression on every metric, and the difference is statistically significant (McNemar's test, p ≈ 6.6 × 10⁻¹⁰).
