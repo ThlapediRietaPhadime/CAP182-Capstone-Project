@@ -70,4 +70,22 @@ UCI Bank Marketing dataset (`bank-additional-full.csv`), 41,188 client contacts 
 | Recall (deposit) | 0.473 | 0.805 |
 | F1 (deposit) | 0.392 | 0.547 |
 
-Random Forest outperforms Logistic Regression on every metric, and the difference is statistically significant (McNemar's test, p ≈ 6.6 × 10⁻¹⁰).
+Random Forest outperforms Logistic Regression on every metric, and the difference is statistically significant (McNemar's test, p ≈ 6.6 × 10⁻¹## SS3 Submission
+
+### Part B Notebook (scripts/SS3_PartB.ipynb)
+
+The SS2 final model (Random Forest) is applied to the STADIOEquities client data extract. The notebook has five labelled sections: dataset loading, preprocessing, model training, model validation and results visualisation.
+
+To run it: clone the repository, run `pip install -r requirements.txt`, open `scripts/SS3_PartB.ipynb` and choose Kernel → Restart & Run All.
+
+### Data
+
+The four data tables are in `ss3_data/raw/`, with descriptions in [ss3_data/DATA_README.md](ss3_data/DATA_README.md).
+Presentation video is in ss3_data
+Video presentation link :
+
+
+### Main results (held-out test set)
+
+ROC-AUC 0.893, accuracy 0.816, precision 0.730, recall 0.895, F1 0.804. The strongest predictors are onboarding progress and steps completed.
+
