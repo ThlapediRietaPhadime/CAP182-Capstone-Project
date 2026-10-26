@@ -81,9 +81,7 @@ To run it: clone the repository, run `pip install -r requirements.txt`, open `sc
 ### Data
 
 The four data tables are in `ss3_data/raw/`, with descriptions in [ss3_data/DATA_README.md](ss3_data/DATA_README.md).
-Presentation video is in ss3_data
 Video presentation link :
-
 
 ### Main results (held-out test set)
 
